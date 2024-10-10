@@ -69,6 +69,8 @@ body {
     background-position: center bottom; /* Posiciona a imagem de fundo no centro e na parte inferior */
 }
 
+
+
 @media (max-width: 767px) {
     .bunner {
         padding: 10px; /* Reduz o padding do bunner em telas menores */
@@ -147,4 +149,20 @@ body {
 footer {
     padding: 50px 0; /* Define o preenchimento superior e inferior do rodapé */
     text-align: center; /* Centraliza o texto no rodapé */
+}
+.navbar-brand {
+    width: 90px; /* Largura da logo */
+    height: 90px; /* Altura da logo */
+    border-radius: 100%; /* Arredonda os cantos da logo para torná-la circular */
+    overflow: hidden; /* Garante que o conteúdo da logo não transborde */
+  
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+}
+.img {
+    width: 50%; /* Define a largura do elemento bunner como 100% do contêiner pai */
+    height: 50vh; /* Define a altura do bunner como 100% da altura da janela de visualização */
+    padding: 50px; /* Adiciona espaço interno ao bunner */
+    max-width: 50%; /* Mantém a imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    background-color: #C7C8F5;
 }
