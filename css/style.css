@@ -1,0 +1,150 @@
+@charset "UTF-8"; /* Define o conjunto de caracteres para o arquivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); /* Importa a fonte Roboto Condensed do Google Fonts */
+
+body {
+    font-family: 'Roboto Condensed', sans-serif; /* Define a fonte padrão do corpo como Roboto Condensed */
+}
+
+.navbar {
+    display: flex; /* Usando Flexbox para organizar os itens na navbar */
+    justify-content: space-between; /* Espaça os itens entre a logo e o menu */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    position: fixed; /* Mantém a navbar fixa no topo da página */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    background-color: rgba(255, 255, 255, 0.8); /* Define um fundo leve e semi-transparente para a navbar */
+    z-index: 100; /* Define a prioridade de empilhamento da navbar, garantindo que ela fique acima de outros elementos */
+    padding: 10px; /* Adiciona algum espaço interno à navbar */
+}
+
+.navbar * {
+    transition: all .3s; /* Define uma transição suave para todos os elementos dentro da navbar */
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda do botão do menu hambúrguer */
+    background: transparent; /* Define fundo transparente para o botão */
+}
+
+.navbar-nav {
+    display: flex; /* Usando Flexbox para alinhar os links do menu */
+    gap: 40px; /* Define o espaço entre os links do menu */
+    font-size: 1rem; /* Define o tamanho da fonte dos links */
+}
+
+.navbar-brand {
+    width: 90px; /* Largura da logo */
+    height: 90px; /* Altura da logo */
+    border-radius: 100%; /* Arredonda os cantos da logo para torná-la circular */
+    overflow: hidden; /* Garante que o conteúdo da logo não transborde */
+  
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+}
+
+.nav-link {
+    transition: all .6s; /* Define uma transição suave para os links do menu */
+}
+
+.img {
+    width: 100%; /* Define a largura do elemento bunner como 100% do contêiner pai */
+    height: 100vh; /* Define a altura do bunner como 100% da altura da janela de visualização */
+    padding: 100px; /* Adiciona espaço interno ao bunner */
+    max-width: 100%; /* Mantém a imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    background-color: #C7C8F5;
+}
+
+.bunner:hover {
+    padding: 10px; /* Reduz o padding quando o bunner é hoverado */
+}
+
+.bunner > .bg {
+    width: 100%; /* Define a largura do fundo do bunner como 100% */
+    height: 100%; /* Define a altura do fundo do bunner como 100% */
+    background-image: url("https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=80"); /* Adiciona a imagem de fundo ao bunner */
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa ao rolar a página */
+    background-position: center bottom; /* Posiciona a imagem de fundo no centro e na parte inferior */
+}
+
+@media (max-width: 767px) {
+    .bunner {
+        padding: 10px; /* Reduz o padding do bunner em telas menores */
+    }
+
+    .bunner > .bg {
+        background-attachment: unset; /* Remove o efeito fixo da imagem de fundo em telas menores */
+    }
+}
+
+.scroll-downs {
+    position: absolute; /* Permite que o elemento seja posicionado em relação ao seu contêiner pai */
+    bottom: 100px; /* Define a distância do fundo da janela */
+    left: calc(50% - 10px); /* Centraliza horizontalmente o elemento, ajustando 10px para a esquerda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.mousey {
+    width: 2px; /* Largura do elemento da "mousey" */
+    padding: 1px 9px; /* Define o preenchimento interno do elemento */
+    height: 32px; /* Altura do elemento da "mousey" */
+    border: 1px solid #fff; /* Define uma borda branca ao redor do elemento */
+    border-radius: 25px; /* Arredonda os cantos da borda */
+    box-sizing: content-box; /* Inclui apenas o conteúdo na largura e altura, sem o preenchimento */
+    position: relative; /* Permite que o elemento seja posicionado em relação à sua posição original */
+}
+
+.scroller {
+    position: absolute; /* Permite que o elemento seja posicionado em relação ao seu contêiner pai */
+    top: 6px; /* Define a distância do topo */
+    width: 2px; /* Largura do elemento scroller */
+    height: 6px; /* Altura do elemento scroller */
+    border-radius: 25%; /* Arredonda os cantos do elemento scroller */
+    background-color: #fff; /* Define a cor de fundo do scroller como branco */
+    animation-name: scroll; /* Aplica a animação definida em @keyframes scroll */
+    animation-duration: 1.7s; /* Duração da animação */
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94); /* Função de temporização para a animação */
+    animation-iteration-count: infinite; /* Faz a animação se repetir indefinidamente */
+}
+
+@keyframes scroll {
+    0% { opacity: 0; } /* Início da animação com opacidade 0 */
+    10% { transform: translateY(0); opacity: 1; } /* No final de 10%, a opacidade vai para 1 */
+    100% { transform: translateY(7px); opacity: 0; } /* No final da animação, o elemento se desloca 7px para baixo e a opacidade volta a 0 */
+}
+
+.gallery {
+    width: 100%; /* Define a largura da galeria como 100% */
+    display: flex; /* Usando Flexbox para organizar os itens da galeria */
+    flex-direction: row; /* Define a direção dos itens como linha */
+    flex-wrap: wrap; /* Permite que os itens da galeria quebrem em várias linhas */
+    align-items: flex-start; /* Alinha os itens ao início do contêiner */
+    gap: 10px; /* Define o espaço entre os itens da galeria */
+    padding: 0 10px 10px 10px; /* Define o preenchimento da galeria */
+}
+
+.content-gallery {
+    flex: 1 1 24%; /* Define que cada item ocupa 24% do espaço disponível e pode crescer ou encolher */
+    display: flex; /* Usando Flexbox para organizar o conteúdo dentro do item da galeria */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    gap: 10px; /* Define o espaço entre os itens do conteúdo da galeria */
+}
+
+.content-gallery .item {
+    min-width: 300px; /* Define uma largura mínima de 300px para os itens */
+    max-width: 100%; /* Limita a largura máxima dos itens a 100% */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: all 1s; /* Define uma transição suave para todos os itens */
+    filter: grayscale(100%); /* Aplica um filtro em escala de cinza aos itens */
+}
+
+.content-gallery .item:is(:hover, .active) {
+    filter: none; /* Remove o filtro em escala de cinza quando o item é hoverado ou ativo */
+}
+
+footer {
+    padding: 50px 0; /* Define o preenchimento superior e inferior do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+}
