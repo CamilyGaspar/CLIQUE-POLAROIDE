@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* Define o conjunto de caracteres para o arquivo CSS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); /* Importa a fonte Roboto Condensed do Google Fonts */
+/* Importa a fonte Roboto Condensed do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 /* Garante que o fundo cubra toda a página */
 html, body {
@@ -8,7 +8,7 @@ html, body {
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove preenchimentos padrão */
     background-color: #B090F5; /* Cor de fundo que se estende por toda a página */
-    font-family: 'Roboto Condensed', sans-serif; /* Define a fonte padrão do corpo como Roboto Condensed */
+    font-family: 'Roboto Condensed', sans-serif; /* Define a fonte padrão do corpo */
 }
 
 /* Navbar */
@@ -23,6 +23,7 @@ html, body {
     background-color: #C7C8F5;
     z-index: 100;
     padding: 10px;
+    width: 100%;
 }
 
 /* Estilo padrão para todos os elementos dentro da navbar */
@@ -37,15 +38,15 @@ html, body {
 
 .navbar-nav {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     font-size: 1rem;
 }
 
 .navbar-brand {
-    width: 100px;
-    height: 100px;
-    border-radius: 90%;
-    overflow: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
     background-size: cover;
 }
 
@@ -53,31 +54,38 @@ html, body {
     transition: all .6s;
 }
 
-/* Estilos do banner */
-/* Cabeçalho da página - Removendo o fundo */
+/* Responsividade da navbar */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-brand {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Banner */
 .img {
     width: 100%;
-    height: 100vh;
-    padding: 100px;
-    max-width: 100%;
     height: auto;
-    background-image: transparent; /* Troquei a cor de fundo por transparente */
+    padding: 100px 0;
+    background-color: transparent;
 }
 
 .img > .img-cabecalho {
     width: 100%;
     height: 100%;
-    background-size: auto;
-    background-repeat: initial;
-    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: bottom;
-    background-image: transparent; /* Também ajustei o fundo da imagem aqui */
 }
 
-
 @media (max-width: 767px) {
-    .img-cabecalho {
-        padding: 10px;
+    .img {
+        padding: 50px 0;
     }
 
     .img > .img-cabecalho {
@@ -88,16 +96,16 @@ html, body {
 /* Elementos de rolagem */
 .scroll-downs {
     position: absolute;
-    bottom: 100px;
-    left: calc(50% - 10px);
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
 }
 
 .mousey {
-    width: 2px;
-    padding: 1px 9px;
-    height: 32px;
-    border: 1px solid #fff;
+    width: 24px;
+    height: 44px;
+    border: 2px solid #fff;
     border-radius: 25px;
     box-sizing: content-box;
     position: relative;
@@ -108,40 +116,28 @@ html, body {
     top: 6px;
     width: 2px;
     height: 6px;
-    border-radius: 25%;
     background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 1.7s;
-    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
-    animation-iteration-count: infinite;
-}
-
-@keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(7px); opacity: 0; }
+    animation: scroll 1.7s cubic-bezier(.15, .41, .69, .94) infinite;
 }
 
 /* Galeria */
 .gallery {
     width: 100%;
-    display: flexbox;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
 }
 
 .content-gallery {
-    flex: 1 1 24%;
+    flex: 1 1 calc(25% - 20px);
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .content-gallery .item {
-    min-width: 300px;
+    min-width: 100px;
     max-width: 100%;
     cursor: pointer;
     transition: all 1s;
@@ -152,25 +148,47 @@ html, body {
     filter: none;
 }
 
+@media (max-width: 1200px) {
+    .content-gallery {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-gallery {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .content-gallery {
+        flex: 1 1 100%;
+    }
+}
+
 /* Rodapé */
 footer {
     padding: 50px 0;
     text-align: center;
 }
 
-.navbar-brand {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    overflow: hidden;
-    background-size: cover;
+@media (max-width: 767px) {
+    footer {
+        padding: 20px 0;
+    }
 }
 
-.img {
-    width: 50%;
-    height: 50vh;
-    padding: 50px;
-    max-width: 50%;
-    height: auto;
-    background-color: #C7C8F5;
+/* Ajustes finais para mobile */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .img {
+        padding: 50px 0;
+    }
 }
