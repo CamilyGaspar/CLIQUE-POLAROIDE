@@ -3,59 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
     <title>Clique Polaroide</title>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <!-- Google Fonts - Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Custom CSS -->
-    <style>
-        .gallery img {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-            transition: transform 0.3s ease, z-index 0.3s ease;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .gallery img.expand {
-            transform: scale(2);
-            z-index: 10;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-<!-- Álbum 1 -->
-<main>
-    <section class="album">
-        <h1 class="album-title">Paulista</h1>
-        <div class="gallery">
-            <img src="images/fotos para albuns/1.jpeg" alt="Casamento 1">
-            <img src="images/fotos para albuns/2.jpeg" alt="Casamento 2">
-            <img src="images/fotos para albuns/3.jpeg" alt="Casamento 3">
-            <img src="images/fotos para albuns/4.jpeg" alt="Família 1">
-            <img src="images/fotos para albuns/5.jpeg" alt="Família 2">
-            <img src="images/fotos para albuns/6.jpeg" alt="Família 3">
-            <img src="images/fotos para albuns/7.jpeg" alt="Retrato 1">
-            <img src="images/fotos para albuns/8.jpeg" alt="Retrato 2">
-            <img src="images/fotos para albuns/9.jpeg" alt="Retrato 3">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo 100x100.jpeg" alt="Clique Polaroid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trabalhos.html" target="_blank">Trabalho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wa.me/5511914730193" target="_blank">Faça seu orçamento</a>
+                </li>
+                <!-- Botão de Login -->
+                <li class="nav-item">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+                </li>
+            </ul>
         </div>
-    </section>
-</main>
+    </div>
+</nav>
+
+<!-- Modal de Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Nome de Usuário</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cabeçalho da página -->
+<header class="img">
+    <div class="img-cabecalho">
+        <img src="images/WhatsApp Image 2024-10-10 at 15.13.08.jpeg">
+    </div>
+</header>
+
+<!-- Seção Sobre -->
+<div class="container" id="sobre">
+    <h1>Sobre</h1>
+    <h3>Em um mundo digital saturado de selfies e fotos filtradas, a empresa Clique Polaroid surge como uma ode à nostalgia, autenticidade e instantaneidade. Especializada em capturar e imprimir fotos Polaroid, a Clique Polaroid transforma momentos fugazes em lembranças tangíveis e duradouras.
+        Fundada com a missão de resgatar a magia da fotografia instantânea, a Clique Polaroid oferece uma experiência única para seus clientes. Equipados com câmeras Polaroid clássicas e um olhar artístico afiado, nossos fotógrafos habilidosos são mestres em capturar a essência e a emoção de cada momento.
+        Em um mundo acelerado e digital, a Clique Polaroid convida você a desacelerar, apreciar o momento presente e celebrar a beleza da fotografia instantânea. Junte-se a nós enquanto continuamos a transformar momentos fugazes em memórias eternas, clique a clique, Polaroid a Polaroid.
+    </h3>
+</div>
+
+<!-- Rodapé da página -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="text-uppercase">Contato</h5>
+                <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+                <p>Telefone: <a href="tel:+551191473019">+55 11 91473-019</a></p>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="text-uppercase">Redes Sociais</h5>
+                <a href="https://www.facebook.com/seuperfil" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/cliquepolaroide" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com/seuperfil" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/seuperfil" class="me-4 text-reset" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+        © 2024 Clique Polaroid. Todos os direitos reservados.
+    </div>
+</footer>
 
 <!-- JQuery e Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<!-- Expansão de imagens -->
+<!-- Script de Login -->
 <script>
-    const images = document.querySelectorAll('.gallery img');
+    // Adiciona um evento de submissão ao formulário de login
+    $('#loginForm').on('submit', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
 
-    images.forEach(image => {
-        image.addEventListener('click', () => {
-            images.forEach(img => img.classList.remove('expand'));
-            image.classList.add('expand');
-        });
+        const username = $('#username').val(); // Obtém o valor do nome de usuário
+        const password = $('#password').val(); // Obtém o valor da senha
+
+        // Aqui você pode fazer a validação do login (ex: AJAX para autenticação)
+
+        alert('Login realizado com sucesso!\nUsuário: ' + username); // Exibe mensagem de sucesso
+        $('#loginModal').modal('hide'); // Fecha o modal após login
     });
 </script>
 
