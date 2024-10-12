@@ -56,6 +56,19 @@ html, body {
 .album-title{
     align-items: center;
 }
+.gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery img.expand {
+    transform: scale(2); /* Expande a imagem */
+    z-index: 10; /* Traz a imagem para frente */
+}
 /* Responsividade da navbar */
 @media (max-width: 767px) {
     .navbar-nav {
