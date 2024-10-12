@@ -84,3 +84,15 @@ $(document).ready( function () {
 
     }, 2000);
 });
+// Seleciona todas as imagens da galeria
+const images = document.querySelectorAll('.gallery img');
+
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // Remove a classe expand de todas as imagens
+        images.forEach(img => img.classList.remove('expand'));
+        
+        // Adiciona a classe expand à imagem clicada
+        image.classList.add('expand');
+    });
+});
