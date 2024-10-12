@@ -53,7 +53,9 @@ html, body {
 .nav-link {
     transition: all .6s;
 }
-
+.album-title{
+    align-items: center;
+}
 /* Responsividade da navbar */
 @media (max-width: 767px) {
     .navbar-nav {
