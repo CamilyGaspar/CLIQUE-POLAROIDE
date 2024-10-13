@@ -1,0 +1,32 @@
+#trabalhos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#dishes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+@media screen and  (max-width: 1170px){
+  #dishes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #dishes .dish{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    border-radius: 5% 5% 5% 5%;
+  }
+}
