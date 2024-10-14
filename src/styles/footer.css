@@ -6,7 +6,6 @@ footer{
   justify-content: space-between;
   padding: 0px 8% 24px 8%;
   align-items: center;
-  flex-direction: row;
 }
 
 #copyright{
