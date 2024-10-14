@@ -9,8 +9,10 @@ footer{
 }
 
 #copyright{
+  display: flex;
   color: 1d1d1d;
   font-weight: 500;
+  align-items: center;
 }
 @media screen and  (max-width: 1170px){
 #footer_items{
