@@ -12,7 +12,7 @@ footer{
   color: 1d1d1d;
   font-weight: 500;
 }
-@media screen and  (max-width: 1170px){}
+@media screen and  (max-width: 760px){}
 #footer_items{
   flex-direction: column;
   gap: 20px;
