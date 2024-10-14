@@ -58,6 +58,7 @@ header{
     cursor: pointer;
   }
   #mobile_menu.active{
+    display: none;
     display: flex;
     flex-direction: column;
     align-items: baseline;
