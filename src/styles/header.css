@@ -60,7 +60,7 @@ header{
   #mobile_menu.active{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
   }
 
   #mobile_nav_list{
