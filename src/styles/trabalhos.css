@@ -6,7 +6,7 @@
   min-height: 100vh;
 }
 
-#trabalhos section-title{
+#trabalhos .section-title{
   display: flex;
   flex-direction: row;
   align-items: center;
