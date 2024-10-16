@@ -37,6 +37,8 @@ $(document).ready(function () {
 document.querySelectorAll('.carousel-container').forEach((carousel) => {
     const track = carousel.querySelector('.carousel-track');
     const slides = Array.from(track.children);
+    const nextButton = carousel.querySelector('.next');
+    const prevButton = carousel.querySelector('.prev');
     let currentSlideIndex = 0;
   
     function updateSlidePosition() {
@@ -49,9 +51,24 @@ document.querySelectorAll('.carousel-container').forEach((carousel) => {
       updateSlidePosition();
     }
   
-    // Inicia o carrossel automático com intervalo de 3 segundos
-    setInterval(goToNextSlide, 3000);
+    function goToPrevSlide() {
+      currentSlideIndex =
+        (currentSlideIndex - 1 + slides.length) % slides.length;
+      updateSlidePosition();
+    }
   
-    // Ajusta o tamanho ao redimensionar a janela
+    // Configura os botões de navegação
+    nextButton.addEventListener('click', goToNextSlide);
+    prevButton.addEventListener('click', goToPrevSlide);
+  
+    // Carrossel automático com intervalo de 3 segundos
+    const autoSlide = setInterval(goToNextSlide, 3000);
+  
+    // Pausa o carrossel automático ao interagir com os botões
+    nextButton.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    prevButton.addEventListener('mouseenter', () => clearInterval(autoSlide));
+  
+    // Ajusta o slide em caso de redimensionamento da janela
     window.addEventListener('resize', updateSlidePosition);
   });
+  
