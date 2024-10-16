@@ -24,8 +24,8 @@
 }
 
 .carousel-container {
-  width: 300px;
-  height: 400px;
+  width: 90%;
+  height: 334px;
   position: relative;
   overflow: hidden;
   border: 1px solid #ddd;
@@ -83,15 +83,16 @@
     gap: 10px;
     border-radius: 5% 5% 5% 5%;
   }
-}
 
-.carousel-container {
+
+  .carousel-container {
   width: 100%; /* Ocupa toda a largura da tela */
   border-radius: 10; /* Remove o arredondamento */
   height: 334px;
-}
+  }
 
-.carousel-button {
+  .carousel-button {
   font-size: 1rem;
   padding: 5px;
+  }
 }
