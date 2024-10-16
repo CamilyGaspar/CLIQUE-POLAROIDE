@@ -15,20 +15,14 @@
 }
 
 /* Container do carrossel */
-.carousel-wrapper {
-  display: flex; /* Alinha os carrosséis em linha */
-  gap: 20px; /* Espaço entre os carrosséis */
-  justify-content: center; /* Centraliza na horizontal */
-  padding: 20px; /* Adiciona espaço interno */
-}
-
 .carousel-container {
-  width: 50%; /* Largura fixa para cada carrossel */
-  height: 334px; /* Altura fixa para manter o layout */
-  position: relative;
+  display: flex;
+  width: 90%; /* 90% da largura da tela para desktops */
+  height: 334px;
+  max-width: 250px;
   overflow: hidden;
-  border: 1px solid #ddd; /* Apenas para visualização */
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Track do carrossel */
@@ -91,7 +85,7 @@
 .carousel-container {
   width: 100%; /* Ocupa toda a largura da tela */
   border-radius: 10; /* Remove o arredondamento */
-  height: 334px;
+  height: 350px;
 }
 
 .carousel-button {
