@@ -51,14 +51,14 @@ header{
     display: none;
   }
   #mobile_btn{
-    display: none;
+    display: block;
     border: none;
     background-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
   }
   #mobile_menu.active{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
