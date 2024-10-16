@@ -6,12 +6,12 @@
   min-height: 100vh;
 }
 
-#dishes{
-  width: 100%;
+#trabalhos section-title{
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  gap: 24px;
-  margin-top: 32px;
+  min-height: 100vh;
 }
 
 /* Container do carrossel */
