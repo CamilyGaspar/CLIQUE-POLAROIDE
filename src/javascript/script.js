@@ -43,6 +43,8 @@ $(document).ready(function () {
         origin: 'left',
         duration: 2000,
         distance: '20%'
+    });
+
 });a
   
   const track = document.querySelector('.carousel-track');
