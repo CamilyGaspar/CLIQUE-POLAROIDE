@@ -19,13 +19,12 @@
   display: flex; /* Alinha os carrosséis em linha */
   gap: 20px; /* Espaço entre os carrosséis */
   justify-content: center; /* Centraliza na horizontal */
-  align-items: center; /* Alinha na vertical */
   padding: 20px; /* Adiciona espaço interno */
 }
 
 .carousel-container {
-  width: 300px; /* Largura fixa para cada carrossel */
-  height: 400px; /* Altura fixa para manter o layout */
+  width: 240px; /* Largura fixa para cada carrossel */
+  height: 334px; /* Altura fixa para manter o layout */
   position: relative;
   overflow: hidden;
   border: 1px solid #ddd; /* Apenas para visualização */
