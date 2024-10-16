@@ -17,43 +17,42 @@
 /* Container do carrossel */
 .carousel-container {
   position: relative;
-  width: 90%; /* 90% da largura da tela para desktops */
-  max-width: 250px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; /* O carrossel ocupará toda a largura */
 }
 
-/* Track do carrossel */
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: max-content; /* Ajusta o tamanho do contêiner para acomodar todas as imagens */
 }
 
-/* Slide individual */
 .carousel-slide {
-  min-width: 100%; /* Cada slide ocupa 100% da largura disponível */
+  min-width: 100%; /* Cada imagem ocupa toda a largura do carrossel */
+  flex: 0 0 auto;
 }
 
-/* Imagem ocupa 100% da largura */
 .carousel-slide img {
-  width: 100%; /* Imagem preenche todo o slide horizontalmente */
-  height: auto; /* Mantém a proporção correta */
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-/* Botões de navegação */
 .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  border: none;
   color: white;
-  font-size: 2rem;
+  border: none;
   cursor: pointer;
   padding: 10px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .carousel-button.prev {
