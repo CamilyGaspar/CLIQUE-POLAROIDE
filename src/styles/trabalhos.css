@@ -23,7 +23,7 @@
 }
 
 .carousel-container {
-  width: 100%; /* Largura fixa para cada carrossel */
+  width: 50%; /* Largura fixa para cada carrossel */
   height: 334px; /* Altura fixa para manter o layout */
   position: relative;
   overflow: hidden;
