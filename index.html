@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="src/styles/styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Clique Polaroide</title>
   <link rel="icon" href="images/icon.ico" type="image/x-icon">
@@ -76,25 +75,23 @@
       <h2 class="section-title">Trabalhos</h2>
       <h3 class="section-subtitle">Nossos Trabalhos</h3>
     
-      <div id="dishes">
-        <div class="dish">
-          <div class="dish-heart">
-            <i class="fa-solid fa-heart"></i>
+      <div class="carousel-container">
+        <div class="carousel-container">
+          <button class="carousel-button prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide"><img src="images/fotos para albuns/1.jpeg" alt="Slide 1"></li>
+              <li class="carousel-slide"><img src="images/fotos para albuns/2.jpeg" alt="Slide 2"></li>
+              <li class="carousel-slide"><img src="images/fotos para albuns/3.jpeg" alt="Slide 3"></li>
+            </ul>
           </div>
-
-          <img src="images/fotos para albuns/1.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/2.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/3.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/4.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/5.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/6.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/7.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/8.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/9.jpeg" class="dish" alt="">
-          <img src="images/fotos para albuns/10.jpeg" class="dish" alt="">
-
+          <button class="carousel-button next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
+    
+        
+    
       </div>
+
     </section>
     <section id="sobre">
         <h1 class="sobre-title">Sobre</h1>
@@ -122,6 +119,6 @@
       </div>
     </div>
   </footer>
-  <script src="src/javascript/script.js"></script>
+  <script src="src/javascript/script.js"></script
 </body>
 </html>
