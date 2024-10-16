@@ -23,7 +23,7 @@
 }
 
 .carousel-container {
-  width: 200px; /* Largura fixa para cada carrossel */
+  width: 100%; /* Largura fixa para cada carrossel */
   height: 334px; /* Altura fixa para manter o layout */
   position: relative;
   overflow: hidden;
@@ -39,7 +39,7 @@
 
 /* Slide individual */
 .carousel-slide {
-  min-width: 50%; /* Cada slide ocupa 100% da largura disponível */
+  min-width: 100%; /* Cada slide ocupa 100% da largura disponível */
 }
 
 /* Imagem ocupa 100% da largura */
