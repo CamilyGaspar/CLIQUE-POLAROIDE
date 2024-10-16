@@ -57,11 +57,11 @@
 }
 
 .carousel-button.prev {
-  left: 10px;
+  left: 5px;
 }
 
 .carousel-button.next {
-  right: 10px;
+  right: 5px;
 }
 
 @media screen and  (max-width: 1170px){
@@ -83,10 +83,10 @@
 
 .carousel-container {
   width: 100%; /* Ocupa toda a largura da tela */
-  border-radius: 0; /* Remove o arredondamento */
+  border-radius: 10; /* Remove o arredondamento */
 }
 
 .carousel-button {
-  font-size: 1.5rem;
-  padding: 8px;
+  font-size: 1rem;
+  padding: 5px;
 }
