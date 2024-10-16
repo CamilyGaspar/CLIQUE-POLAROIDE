@@ -15,6 +15,7 @@
 }
 
 /* Container do carrossel */
+/* Alinha os carrosséis horizontalmente */
 .carousel-wrapper {
   display: flex;
   gap: 20px;
@@ -23,15 +24,17 @@
   padding: 20px;
 }
 
+/* Estilo do container do carrossel */
 .carousel-container {
-  width: 250px;
-  height: 334px;
-  position: relative;
+  width: 300px;
+  height: 400px;
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 8px;
+  position: relative;
 }
 
+/* Configura os slides */
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -48,25 +51,6 @@
   object-fit: cover;
 }
 
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1;
-}
-
-.carousel-button.prev {
-  left: 10px;
-}
-
-.carousel-button.next {
-  right: 10px;
-}
 
 @media screen and  (max-width: 1170px){
   #dishes{

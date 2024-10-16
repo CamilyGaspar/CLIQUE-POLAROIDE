@@ -37,9 +37,6 @@ $(document).ready(function () {
 document.querySelectorAll('.carousel-container').forEach((carousel) => {
     const track = carousel.querySelector('.carousel-track');
     const slides = Array.from(track.children);
-    const nextButton = carousel.querySelector('.next');
-    const prevButton = carousel.querySelector('.prev');
-  
     let currentSlideIndex = 0;
   
     function updateSlidePosition() {
@@ -47,20 +44,14 @@ document.querySelectorAll('.carousel-container').forEach((carousel) => {
       track.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
     }
   
-    nextButton.addEventListener('click', () => {
-      if (currentSlideIndex < slides.length - 1) {
-        currentSlideIndex++;
-        updateSlidePosition();
-      }
-    });
+    function goToNextSlide() {
+      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+      updateSlidePosition();
+    }
   
-    prevButton.addEventListener('click', () => {
-      if (currentSlideIndex > 0) {
-        currentSlideIndex--;
-        updateSlidePosition();
-      }
-    });
+    // Inicia o carrossel automático com intervalo de 3 segundos
+    setInterval(goToNextSlide, 3000);
   
-    // Ajuste automático do tamanho do carrossel
+    // Ajusta o tamanho ao redimensionar a janela
     window.addEventListener('resize', updateSlidePosition);
   });
