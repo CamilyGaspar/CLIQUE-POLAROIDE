@@ -4,6 +4,10 @@
   position: relative;
 }
 
+#trabalhos{
+  display: flex;
+}
+
 #cta{
   width: 50%;
   display: flex;
