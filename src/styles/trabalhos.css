@@ -65,7 +65,7 @@
   right: 5px;
 }
 
-@media screen and  (max-width: 760px){
+@media screen and  (max-width: 1170px){
   #dishes{
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
   .carousel-container {
   width: 100%; /* Ocupa toda a largura da tela */
   border-radius: 10; /* Remove o arredondamento */
-  height: 324px;
+  height: 334px;
   }
 
   .carousel-button {
