@@ -64,7 +64,7 @@
   right: 5px;
 }
 
-@media screen and  (max-width: 1170px){
+@media screen and  (max-width: 760px){
   #dishes{
     display: flex;
     flex-direction: column;
