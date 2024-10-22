@@ -36,12 +36,6 @@
   border-radius: 400px;
 }
 
-#trabalhos{
-  display: flex;
-  min-height: calc(100vh - 100px);
-  position: relative;
-}
-
 .shape{
   background-color:#c3c4f8;
   width: 50%;
