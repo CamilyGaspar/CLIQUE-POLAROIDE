@@ -32,6 +32,7 @@
 
 .carousel{
   position: relative;
+  align-items: center;
   margin-right: 20px; /* Espaço à direita */
   margin-left: 20px; /* Espaço à direita */
 }
