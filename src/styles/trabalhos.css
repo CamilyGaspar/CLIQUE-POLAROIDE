@@ -5,6 +5,13 @@
   min-height: 100vh;
 }
 
+#trabalhos-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
 #dishes{
   width: 100%;
   display: flex;
@@ -18,7 +25,7 @@
   position: relative;
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
-  gap: 20px; /* Espaço entre as divs */
+  gap: 40px; /* Espaço entre as divs */
   max-width: 250px;
   overflow: hidden;
   border-radius: 10px;
