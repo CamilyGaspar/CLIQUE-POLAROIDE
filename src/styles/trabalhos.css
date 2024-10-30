@@ -1,6 +1,5 @@
 #trabalhos{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -17,7 +16,6 @@
 /* Container do carrossel */
 .carousel-container {
   position: relative;
-  flex-direction: row;
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
   max-width: 250px;
