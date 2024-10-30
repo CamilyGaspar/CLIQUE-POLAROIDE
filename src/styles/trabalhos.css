@@ -1,8 +1,8 @@
 #trabalhos{
   display: flex;
+  flex-direction: column; /* Coloca tudo em uma coluna */
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  gap: 20px; /* Espaço entre a div do topo e as outras divs */
 }
 
 #dishes{
