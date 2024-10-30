@@ -17,7 +17,7 @@
 .carousel-container {
   display: flex;
   position: relative;
-  padding: 40px;
+  margin: 20px;
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
   max-width: 250px;
