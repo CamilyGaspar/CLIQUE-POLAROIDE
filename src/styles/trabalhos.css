@@ -16,8 +16,6 @@
 /* Container do carrossel */
 .carousel-container {
   position: relative;
-  margin-left: 20px;  /* Espaço à esquerda */
-  margin-right: 20px; /* Espaço à direita */
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
   max-width: 250px;
