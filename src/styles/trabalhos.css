@@ -83,6 +83,7 @@
 
 
   .carousel-container {
+    flex-direction: column;
   width: 100%; /* Ocupa toda a largura da tela */
   border-radius: 10; /* Remove o arredondamento */
   height: 334px;
