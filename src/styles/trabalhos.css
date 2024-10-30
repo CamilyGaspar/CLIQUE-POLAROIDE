@@ -21,7 +21,7 @@
 }
 
 /* Container do carrossel */
-.carousel .carousel-container {
+.carousel-container {
   position: relative;
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
@@ -31,6 +31,11 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel{
+  margin-right: 20px; /* Espaço à direita */
+  margin-left: 20px; /* Espaço à direita */
 }
 
 /* Track do carrossel */
