@@ -73,6 +73,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+  }
   #dishes{
     display: flex;
     flex-direction: column;
