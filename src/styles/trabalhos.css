@@ -18,6 +18,7 @@
   position: relative;
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
+  gap: 20px; /* Espaço entre as divs */
   max-width: 250px;
   overflow: hidden;
   border-radius: 10px;
