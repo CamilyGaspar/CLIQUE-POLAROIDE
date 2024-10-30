@@ -15,8 +15,8 @@
 
 /* Container do carrossel */
 .carousel-container {
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: row;
   width: 100%; /* 90% da largura da tela para desktops */
   height: 334px;
