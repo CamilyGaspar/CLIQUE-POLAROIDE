@@ -13,19 +13,24 @@
   margin-top: 32px;
 }
 
-/* Container do carrossel */
-.albums-container {
-  display: flex;
-  flex-wrap: wrap;  /* Permite que os álbuns se reorganizem em telas menores */
-  gap: 20px;        /* Espaço entre os álbuns */
-  justify-content: center;
-  margin-top: 20px;
+.top-div {
+  width: 100%; /* Ocupa toda a largura */
+  text-align: center;
 }
 
-/* Cada álbum ocupa 45% da largura em telas maiores */
-.carousel {
-  flex: 1 1 45%;   /* Ocupa 45% da tela e se ajusta conforme o espaço */
-  min-width: 300px; /* Garante que não fique muito pequeno */
+
+/* Container do carrossel */
+.carousel-container {
+  display: flex;
+  position: relative;
+  margin-left: 20px;  /* Espaço à esquerda */
+  margin-right: 20px; /* Espaço à direita */
+  width: 100%; /* 90% da largura da tela para desktops */
+  height: 334px;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Track do carrossel */
