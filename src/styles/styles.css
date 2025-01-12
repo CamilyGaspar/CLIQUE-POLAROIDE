@@ -49,6 +49,11 @@ section{
   color: #1d1d1d;
   font-size: 1.563;
 }
+.section-subtitle {
+  display: block; /* Garante que o texto ocupe uma linha */
+  text-align: center; /* Opcional: Centraliza o texto */
+  margin-top: 20px; /* Ajuste o espaçamento entre as linhas */
+}
 .section-subtitle{
   font-size: 2.1875;
 }
