@@ -52,6 +52,20 @@ section{
 .section-subtitle{
   font-size: 2.1875;
 }
+.section-subtitle span {
+  display: block; /* Faz o conteúdo do <span> ocupar uma nova linha */
+}
+.section-subtitle {
+  display: block; /* Garante que o título ocupe toda a largura */
+  text-align: center; /* Opcional: Centraliza o texto */
+  line-height: 1.5; /* Aumenta o espaço entre as linhas */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+.carousel h3.section-subtitle {
+  flex: 0 0 100%; /* Faz o título ocupar 100% da largura */
+  text-align: center;
+}
+
 /*configurações da seção sobre*/
 #sobre{
   width: 100%;
